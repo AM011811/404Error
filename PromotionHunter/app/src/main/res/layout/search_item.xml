@@ -20,6 +20,30 @@
         android:layout_alignParentStart="true"
         android:text="請輸入商品名稱"
         android:gravity="center"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/searchView" />
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentEnd="true" />
+
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkedTextView"
+        android:layout_below="@+id/searchView"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/checkedTextView"
+        android:layout_toEndOf="@+id/checkedTextView"
+        android:layout_marginTop="33dp"
+        android:transitionGroup="true" />
 
 </RelativeLayout>
